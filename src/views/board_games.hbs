@@ -1,0 +1,25 @@
+<main>
+	<h3>Board Games!</h3>
+	<div class="row">
+  <ul>
+  {{#each bgames}}
+    <li>       
+      
+      
+  <div class="col-4">
+    <h2 class="center">Name: {{this.name}}</h2>
+    <a href="{{this.link}}">
+    	<img class="welcome focus lgTile_radius" src="{{this.picture}}" /></a>
+    <p class="description">{{this.about}}
+    </p>    
+  </div>
+
+     
+      
+    </li>
+  {{/each}}
+  </ul>
+</div>
+
+
+</main>

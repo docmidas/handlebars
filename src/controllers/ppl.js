@@ -2,8 +2,6 @@
 var express    = require('express'),
     Ppl      = express.Router(),
     fs         = require('fs');
-
-
   
 
   Ppl.route('/places/?')
