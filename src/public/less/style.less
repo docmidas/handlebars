@@ -1,0 +1,112 @@
+@blackk: #086788;
+@whitee: #FFF1D0;
+@mint: #2EC4B6;
+@redd: #E71D36;
+@yelloww: #F0C808;
+
+
+@bgColor: @yelloww;
+@mainColor: @blackk;
+@hiColor: @mint;
+@textColor: @blackk;
+@offWhite: @whitee;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: @bgColor;
+}
+
+main {
+  margin: 0 8%;
+  background: @mainColor;
+  // background-color: pink;
+  border: 1px solid @offWhite;
+  border-radius: 15px;
+
+}
+
+// .row {
+//   display: inline;
+// }
+
+.col4 {
+  display: inline-block;  
+  margin: 3% 0;
+  width: 25%;
+color: @offWhite;
+  background-color: @hiColor;
+  border: 2px solid @textColor;
+  text-align: center;
+
+  &:first-child{
+            margin-left: 10%;             
+        }
+}
+
+.col3 {
+  display: inline-block;  
+  margin: 3% 0;
+  width: 20%;
+color: @offWhite;
+  background-color: @hiColor;
+  border: 2px solid @textColor;
+  text-align: center;
+
+  &:first-child{
+            margin-left: 10%;             
+        }
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.label {
+  font-style: italic;
+
+}
+
+h1 {
+  color: @hiColor;
+}
+
+h3 {
+  margin-bottom: 5px;
+  color: @hiColor;
+}
+
+a {
+  &:visited, &:link {
+    color: @offWhite;
+  }
+
+  &:hover {
+    background-color: @bgColor;
+  }
+}
+
+
+
+button {
+  border-radius: 12px;
+  color: @offWhite;
+  background-color: @textColor;
+  border: 2px solid @hiColor;
+}
+
+button:hover {
+  cursor: pointer;
+  border-radius: 6px;
+  color: @offWhite;
+  background-color: @hiColor;
+  border: 2px solid @textColor;
+  }
+
+

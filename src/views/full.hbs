@@ -1,0 +1,20 @@
+<main>
+  <h1>Welcome to the the Full List</h1>
+
+  <ul>
+  {{#each ppl}}
+    <li> 
+      <h3>{{this.name}}</h3>
+      Email: {{this.email}}<br />
+      Company: {{this.company}}<br />
+      Age: {{this.age}}<br />
+      Address: {{this.address}}<br />
+
+       <a href="/ppl/{{@index}}"><button type="submit">MoreInfo</button></a>
+      
+    </li>
+  {{/each}}
+  </ul>
+
+
+</main>

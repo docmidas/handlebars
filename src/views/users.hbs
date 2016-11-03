@@ -1,0 +1,27 @@
+<main>
+  <h1>User Page</h1>
+  <div>
+    <a href="/users/balances/">Balances</a>
+  </div>
+  <p></p>
+
+  <div>
+  <h1>AJAX POST with other APIs, slect 1 below, and check console--></h2>
+  <form method='post' action='#'>
+     <input id="apiUrl" type="text" name="apiUrl" size="65" placeholder="Add an API url with parameters"/> 
+     <button type="submit">Test API</button>          
+    </form>  
+    <h6>http://www.omdbapi.com/?i=tt0096256&plot=short&r=json</h6>
+    <h6>http://api.openweathermap.org/data/2.5/forecast/city?id=4887398&APPID=5469b54aae40529a913d6560089ad0c6</h6>
+    <h6>http://www.cheapshark.com/api/1.0/games?steamAppID=331600</h6>
+    <h6>https://bgg-json.azurewebsites.net/collection/tdex</h6>
+  </div>
+
+  <div id='listOfTemps'>      
+  </div>
+</main>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js'></script>
+<script src='/js/ajaxform.js'></script>
+
