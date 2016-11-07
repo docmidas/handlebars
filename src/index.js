@@ -53,6 +53,13 @@ app.route('/about/?')
     });
   })
 
+  app.route('/home/?')
+  .get(function(req, res, next) {
+    res.render('home', {
+      pageTitle: 'Home'
+    });
+  })
+
 //Def FULL LISTING with 5 properties
 app.route('/full/?')
   .get(function(req, res, next) {
