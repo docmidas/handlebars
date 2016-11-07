@@ -1,14 +1,3 @@
-[
-  {
-    "name": "Loopin Louie",
-    "picture": "https://cf.geekdo-images.com/images/pic289639_md.jpg",
-    "link": "https://www.boardgamegeek.com/boardgame/327/loopin-louie",
-    "about": "In Loopin' Louie, a battery-powered motor placed in the center of the table rotates a boom with a little plastic plane. Four radial arms lead out to the players' barns and the chickens they're trying to protect. Each barn has a little lever, which is used to knock the rotating plane away from your chickens and hopefully into someone else's. When only one player has chickens remaining, he or she wins the game. Very silly and very addictive.\r\n"
-  },
-  {
-    "name": "Android Netrunner",
-    "picture": "https://cf.geekdo-images.com/images/pic1324609_md.jpg",
-    "link": "https://boardgamegeek.com/boardgame/124742/android-netrunner",
-    "about": "Android: Netrunner is an asymmetrical Living Card Game for two players. Set in the cyberpunk future of Android and Infiltration, the game pits a megacorporation and its massive resources against the subversive talents of lone runners.\r\n"
-  }
+[{"name":"Abyss","picture":"https://cf.geekdo-images.com/images/pic1965255_md.jpg","link":"https://www.boardgamegeek.com/boardgame/155987/abyss","about":"Abyss is a game of development, combination and collection in which players try to take control of strategic locations in an underwater city. To achieve this, players must develop on three levels: first by collecting allies, then using them to recruit Lords of the Abyss, who will then grant access to different parts of the city. Players acquire cards through a draft of sorts, and the Lords of the Abyss acquired on those cards grant special powers to the cardholder — but once you use the cards to acquire a location, that power is shut off, so players need to time their land grabs well in order to put themselves in the best position for when the game ends."},
+{"name":"Dominant Species","picture":"https://cf.geekdo-images.com/images/pic784193_md.jpg","link":"https://www.boardgamegeek.com/boardgame/62219/dominant-species","about":"Dominant Species is a game that "}
 ]

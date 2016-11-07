@@ -7,6 +7,7 @@ var express    = require('express'),
   .get(function(req, res, next) {
     //var id = parseInt(req.params.id);
        var bgames = fs.readFileSync(__dirname + '/../db/board_games.json');
+       //console.log(__dirname);
       //console.log(id);
 
     bgames = JSON.parse(bgames.toString());
