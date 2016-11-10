@@ -9,7 +9,7 @@ var throbSpeed;
 function createPulse(pulseFreq) {
 	for (var i = 0; i < pulseFreq; i++) {
 		var elem = document.createElement('img'); 
-	    elem.src = "images/elec_pulse.png";
+	    elem.src = "../images/elec_pulse.png";
 	    elem.style.position = "absolute";
 	    elem.style.left = getRandom(window.innerWidth -200) + 'px';
 	    elem.style.top = getRandom(window.innerHeight -100) + 'px';

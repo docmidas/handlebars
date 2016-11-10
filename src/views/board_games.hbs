@@ -14,12 +14,14 @@
   
     {{#each bgames}}
 
-        <div class="col-4">
+        <div class="col-6">
           <h2 class="center">{{this.name}}</h2>
-          <a href="{{this.link}}">
-            <img class="welcome focus lgTile_radius" src="{{this.picture}}" /></a>
-          <!-- <p class="description">{{this.about}}
-          </p>  -->   
+          <div class="thing_tiles">                     
+                
+                <img class="welcome lgTile_radius left" src="{{this.picture}}" />
+                <p class="description">{{this.about}} <a href="{{this.link}}" class="see_more"> See more...</a></p>  
+                      
+          </div>
         </div>
 
         
