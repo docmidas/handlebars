@@ -17,6 +17,36 @@ var express    = require('express'),
       bgames: bgames
     });
   })
+
+  Things.route('/video_games/?')
+  .get(function(req, res, next) {
+    //var id = parseInt(req.params.id);
+       var vgames = fs.readFileSync(__dirname + '/../db/video_games.json');
+       //console.log(__dirname);
+      //console.log(id);
+
+    vgames = JSON.parse(vgames.toString());
+    res.render('video_games', {
+      pageTitle: "Video Games",
+      
+      vgames: vgames
+    });
+  })
+
+  Things.route('/coding/?')
+  .get(function(req, res, next) {
+    //var id = parseInt(req.params.id);
+       var codes = fs.readFileSync(__dirname + '/../db/codes.json');
+       //console.log(__dirname);
+      //console.log(id);
+
+    codes = JSON.parse(codes.toString());
+    res.render('coding', {
+      pageTitle: "Coding",
+      
+      codes: codes
+    });
+  })
  
 
 module.exports = Things;
