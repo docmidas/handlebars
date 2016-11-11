@@ -1,0 +1,45 @@
+
+ <div class="row">
+  <div class="col-8 smallSideMargins">
+    <h1>Other</h1>
+    <p class="indent">Board games have come a long way, particularly in the last few years. While quintessential classics like Monopoly, Life, and Risk are still pervasive, a wave of modern classics have been developed. Here are some of my favorites.
+    </p>
+
+  </div>
+ </div>
+
+
+ <div class="row">
+
+  
+    {{#each others}}
+
+        <div class="col-6">
+          <h2 class="center">{{this.name}}</h2>
+          <div class="item_container">
+            <img class="lone_pic" src="{{this.picture}}" />
+            
+            <div class="item_description"><p>{{this.about}}</p> 
+            <a href="{{this.link}}" class="see_more"> See more...</a>
+            </div>
+              
+                      
+          </div>
+
+        </div>
+        
+
+        
+      
+    {{/each}}
+  
+  </div>
+
+
+    
+
+     
+      
+
+
+

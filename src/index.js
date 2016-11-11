@@ -21,6 +21,11 @@ app.use(bodyParser.urlencoded({extended: true})) //supports encoded
 
 app.use(express.static(__dirname + '/public')); //Tell express where to find static pages
 
+//////////////////////////
+////==Connect database
+require('./config/db');
+///////////////////
+
 var server = app.listen(3000, function() {
   console.log( "Server listening at: " + server.address().port);
 });
