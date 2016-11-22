@@ -92,28 +92,29 @@ Things.route('/other/?')
     });
   })
 
-  // .patch(function(req, res) {
-  //    ///////FOR LOADING TEST ENTRIES 
-  //  var testGifts = [{                    
-  //                   name: "Time Ninja",
-  //                   category: "code",
-  //                   picture: "https://static1.squarespace.com/static/57c0a3786a4963c16852850d/57c0bdd359cc68dae81a7576/57c0bddf9f745643296f09fb/1472438750034/NinjaRun.png?format=1000w",
-  //                   link: "http://docmidas.github.io/project1/",
-  //                   about: "In this endless running game, help Nia Ninja reclaim her clan's lost treasure. Just don't let Jay-the-Jet hit you with his energy blasts."                  
-  //                 },
-  //                 {                    
-  //                   name: "Killer Queen",
-  //                   category: "video_game",
-  //                   picture: "http://technical.ly/brooklyn/wp-content/uploads/sites/4/2014/05/kickstarter-killerqueen.jpg",
-  //                   link: "http://technical.ly/brooklyn/wp-content/uploads/sites/4/2014/05/kickstarter-killerqueen.jpg",
-  //                   about: "Killer Queen is a real-time strategy platform video game developed by Josh DeBonis and Nikita Mikros. The video game is based on a physical game created by the same people"                  
-  //                 }
-  //               ];
-  //   Thing.create(testGifts, function(err, gifts) {
-  //     //console.log(gifts);
-  //     //res.json(gifts);
-  //   });
-  // });  
+  .patch(function(req, res) {
+     ///////FOR LOADING TEST ENTRIES 
+   var testGifts = [{                    
+                    name: "Time Ninja",
+                    category: "code",
+                    picture: "https://static1.squarespace.com/static/57c0a3786a4963c16852850d/57c0bdd359cc68dae81a7576/57c0bddf9f745643296f09fb/1472438750034/NinjaRun.png?format=1000w",
+                    link: "http://docmidas.github.io/project1/",
+                    about: "In this endless running game, help Nia Ninja reclaim her clan's lost treasure. Just don't let Jay-the-Jet hit you with his energy blasts."                  
+                  },
+                  {                    
+                    name: "Killer Queen",
+                    category: "video_game",
+                    picture: "https://i.ytimg.com/vi/1CszgJ96SOk/maxresdefault.jpg",
+                    link: "http://technical.ly/brooklyn/wp-content/uploads/sites/4/2014/05/kickstarter-killerqueen.jpg",
+                    about: "Killer Queen is a real-time strategy platform video game developed by Josh DeBonis and Nikita Mikros. The video game is based on a physical game created by the same people"                  
+                  }
+                ];
+    Thing.create(testGifts, function(err, gifts) {
+      //console.log(gifts);
+      //res.json(gifts);
+      res.json({message: "SEEDs successful"});
+    });
+  });  
   /////////END OF TESTING POST METHOD
 
 module.exports = Things;

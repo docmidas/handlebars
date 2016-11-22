@@ -36,13 +36,7 @@ body {
   /*margin-right: 25px;*/
   margin-top: 0;
   background-color: rgba(123, 206, 229, 0.4);
-  border-radius: 0 0 10px 0px;
-  /*padding-bottom: 8px;*/
-}
-.nav {
-  text-align: right;
-  /*margin-right: 25px;*/
-  background-color: rgba(123, 206, 229, 0.4);
+  /*background-color: @hiColor;*/
   border-radius: 0 0 10px 0px;
   /*padding-bottom: 8px;*/
 }
@@ -63,6 +57,7 @@ body {
 }
 .nav > a > li:hover {
   background-color: gray;
+  /*background-color: @whitee;*/
   border: 1px solid black;
 }
 .nav > a > li {
@@ -80,7 +75,8 @@ p,
 h1,
 h2 {
   text-align: left;
-  color: #D8FFE8;
+  /*color: #D8FFE8;*/
+  color: #FFF1D0;
 }
 .indent {
   text-indent: 50px;
