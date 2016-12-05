@@ -20,9 +20,9 @@ var express   = require('express'),
 /////////////////////////////Route: root/things/video_games
 Things.route('/video_games/?')
   .get(function(req, res) {
-    console.log(req);
+    //console.log(req);
     Thing.find({category: "video_game"}, function(err, things) { //Find ALL gifts within database
-       console.log(things);
+       //console.log(things);
       res.render('video_games', {vgames: things});
       //res.json(things);
     });
@@ -31,9 +31,9 @@ Things.route('/video_games/?')
   /////////////////////////////Route: root/things/board_games
 Things.route('/board_games/?')
   .get(function(req, res) {
-    console.log(req);
+    //console.log(req);
     Thing.find({category: "board_game"}, function(err, things) { //Find ALL gifts within database
-       console.log(things);
+       //console.log(things);
       res.render('board_games', {bgames: things});
       //res.json(things);
     });
@@ -42,9 +42,9 @@ Things.route('/board_games/?')
   /////////////////////////////Route: root/things/coding
 Things.route('/coding/?')
   .get(function(req, res) {
-    console.log(req);
+    //console.log(req);
     Thing.find({category: "code"}, function(err, things) { //Find ALL gifts within database
-       console.log(things);
+       //console.log(things);
       res.render('coding', {codes: things});
       //res.json(things);
     });
@@ -53,9 +53,9 @@ Things.route('/coding/?')
   /////////////////////////////Route: root/things/other
 Things.route('/other/?')
   .get(function(req, res) {
-    console.log(req);
+    //console.log(req);
     Thing.find({category: "other"}, function(err, things) { //Find ALL gifts within database
-       console.log(things);
+       //console.log(things);
       res.render('other', {others: things});
       //res.json(things);
     });
@@ -64,9 +64,9 @@ Things.route('/other/?')
 /////root/things/?
   Things.route('/?')
   .get(function(req, res) {
-    console.log(req);
+    //console.log(req);
     Thing.find(function(err, things) { //Find ALL things within database
-       console.log(things);
+       //console.log(things);
       res.render('things', {things: things});
 
       //res.json(things);
@@ -84,7 +84,7 @@ Things.route('/other/?')
 
 
       Thing.find(function(err, things) { //Find ALL things within database
-       console.log(things);
+       //console.log(things);
       res.render('things', {things: things});})
 
       //res.redirect('/things');

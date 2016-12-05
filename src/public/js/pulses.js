@@ -6,13 +6,17 @@ var opaLevel = 0;
 
 var throbSpeed;
 
+var pageHeight = Math.max(document.body.offsetHeight, 
+								document.documentElement.clientHeight, document.documentElement.offsetHeight);
+
 function createPulse(pulseFreq) {
 	for (var i = 0; i < pulseFreq; i++) {
 		var elem = document.createElement('img'); 
 	    elem.src = "../images/elec_pulse.png";
 	    elem.style.position = "absolute";
 	    elem.style.left = getRandom(window.innerWidth -200) + 'px';
-	    elem.style.top = getRandom(window.innerHeight -100) + 'px';
+	    elem.style.top = getRandom(window.pageHeight -10) + 'px';
+	    // elem.style.top = getRandom(window.innerHeight -100) + 'px';
 
     //elem.setAttribute("class", "sparks"+pulseCounter);
     elem.setAttribute("class", "sparks1");

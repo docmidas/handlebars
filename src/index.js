@@ -31,54 +31,19 @@ var server = app.listen(3000, function() {
 });
 
 
-//Define todos route
-// app.route('/ppl/:id/?')
-//   .get(function(req, res, next) {
-//     var id = parseInt(req.params.id);
-//       ppl = fs.readFileSync(__dirname + '/db/people.json');
-//       console.log(id);
-
-//     ppl = JSON.parse(ppl.toString());
-//     res.render('detail', {
-//       pageTitle: ppl[id].name,
-//       ppl: ppl[id]
-//     });
-//   })
 //Mount middleware
-app.use('/ppl/?', require('./controllers/ppl'));
-app.use('/users/?', require('./controllers/users'));
 app.use('/things/?', require('./controllers/things'));
-// app.use('/board_games/?', require('./controllers/board_games'));
+
 
 
 //Def ABout
-app.route('/about/?')
-  .get(function(req, res, next) {
-    res.render('about', {
-      pageTitle: 'About'
-    });
-  })
 
   app.route('/home/?')
   .get(function(req, res, next) {
     res.render('home', {
-      pageTitle: 'Home'
+      pageTitle: 'Homepage'
     });
   })
-
-//Def FULL LISTING with 5 properties
-app.route('/full/?')
-  .get(function(req, res, next) {
-    var ppl = fs.readFileSync(__dirname + '/db/people.json');  
-
-
-    res.render('full', {
-      pageTitle: 'Full List',
-      ppl: JSON.parse(ppl.toString())
-    });
-  })
-
-
 
 
 //Define homepage
